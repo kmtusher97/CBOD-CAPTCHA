@@ -29,6 +29,7 @@
 ## Algorithm Flowchart
 ---
 ![CBOD-FLOWCHART](./documentation/figures/flowchart.png)
+<br/>
 *Figure: Flowchat of CBOD-CAPTCHA generation technique*
 
 <br/>
@@ -36,4 +37,5 @@
 ## COBD-CAPTCHA Sample
 ---
 ![CBOD-Sample](./documentation/figures/sample-cbod-captchas.png)
+<br/>
 *Figure: Sample of CBOD-CAPTCHA*
