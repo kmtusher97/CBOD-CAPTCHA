@@ -88,4 +88,4 @@ def create_new_captcha():
             target_colors.add(boundary_colors[i])
     # apply_random_noise()
 
-    return {'category': target_category, 'target_colors': target_colors}
+    return {'category': target_category.upper(), 'target_colors': target_colors}
