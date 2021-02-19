@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!-- {% load static %} -->
+
+{% load static %}
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+  <div class="box">
+    <div class="div1">
+      <img class="img1" src="{% static 'images/crow.jpg' %}" alt="Horse">
+      <div class="txt1">Select the colors that surrounds:<br><b>Horse</b></div>
+    </div>
+    <div>
+      <img class="img2" src="{% static 'captcha/captcha.jpeg' %}" alt="CAPTCHA">
+    </div>
+    <div class="container div3">
+      <button class="button button1">R</button>
+      <button class="button button2">G</button>
+      <button class="button">B</button>
+      <button class="button">Y</button>
+      <button class="button">B</button>
+      <button class="button">B</button>
+      <button class="button">O</button>
+    </div>
+    <div>
+      <button class="button11">Verify</button>
+      <button class="button12">
+        <img class="icon" src="https://htmlacademy.ru/assets/icons/reload-6x-white.png">
+        Reload
+      </button>
+      <p class="txt2"><b>CBOD-CAPTCHA</b></p>
+    </div>
+  </div>
+</body>
+
+</html>

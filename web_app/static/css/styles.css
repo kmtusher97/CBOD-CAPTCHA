@@ -1,0 +1,122 @@
+* {
+    font-family: "Arial Narrow", "Arial", sans-serif;
+}
+.box {
+    border: 1px solid red;
+    box-sizing: border-box;
+    width: 300px;
+    height: 470px;
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-top: 5%;
+}
+.img1 {
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-left: 3px;
+    float: right;
+    width: 50px;
+    height: 43px;
+} 
+.img2 {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 288px;
+    height: 300px;
+} 
+.txt1 {
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+}
+.div1 {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 50px;
+    background-color: #4da6ff;
+    border-radius: 2px;
+}
+.div3 {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 45px;
+    width: 278px;
+    background-color: #d0d7dd;
+    border-radius: 2px;
+    float: left;
+}
+.button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.button1 {
+    background-color: red;
+    color: red;
+}
+.button2 {
+    background-color: green;
+    color: green;
+}
+button:nth-child(3) {
+    background-color: blue;
+    color: blue;
+}
+button:nth-child(4) {
+    background-color: yellow;
+    color: yellow;
+}
+button:nth-child(5) {
+    background-color: black;
+    color: black;
+}
+button:nth-child(6) {
+    background-color: brown;
+    color: brown;
+}
+button:nth-child(7) {
+    background-color: orange;
+    color: orange;
+}
+.button11 {
+    margin-right: 5px;
+    background-color: #4CAF50;
+    border: 2px solid #e4d5d5;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 25px;
+    cursor: pointer;
+    float: right;
+}
+.button12 {
+    margin-left: 5px;
+    background-color: #12ab8d;
+    border: 2px solid #e4d5d5;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    float: left;
+}
+.icon {
+    width: 12px;
+    height: 12px;
+    transition: all 0.4s ease-in-out;
+    margin-right: 5px;
+}
+.icon:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+.txt2 {
+    font-size: 10px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
