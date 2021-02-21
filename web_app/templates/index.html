@@ -21,20 +21,14 @@
 <body>
   <div class="box">
     <div class="div1">
-      <img class="img1" src="{% static '' %}captcha/category_images/{{category}}.jpg" alt="Horse">
-      <div class="txt1">Select the colors that surrounds:<br><b>{{category}}</b></div>
+      <img class="img1" id="img-category" src="#" alt="Category">
+      <div class="txt1">Select the colors that surrounds:</div>
+      <div id="category-name"></div>
     </div>
-    <div>
-      <img class="img2" src="{% static 'captcha/captcha.jpeg' %}" alt="CAPTCHA">
+    <div id="img-captcha-div">
+      <img class="img2" id="img-captcha" src="#" alt="CAPTCHA">
     </div>
     <div class="container div3" id="color-button-div">
-      <!-- <button class="button button1">R</button>
-      <button class="button button2">G</button>
-      <button class="button">B</button>
-      <button class="button">Y</button>
-      <button class="button">B</button>
-      <button class="button">B</button>
-      <button class="button">O</button> -->
     </div>
     <div>
       <button class="button11">Verify</button>
