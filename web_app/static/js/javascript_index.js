@@ -4,6 +4,7 @@ const captchaImageUrl = "static/captcha/captcha.jpeg";
 
 $(document).ready(function () {
     selectedColors = new Set();
+    targetColors = [];
     function leadCAPTCHA() {
         $.ajax({
             type: "get",
@@ -11,6 +12,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 let data = JSON.parse(response);
+                targetColors = data.target_colors;
                 $("#category-name").text(data.category);
                 $("#img-category").attr("src", categoryImagesUrl + data.category + ".jpg" + "?timestamp=" + new Date().getTime());
                 $("#img-captcha").attr("src", captchaImageUrl + "?timestamp=" + new Date().getTime());
@@ -44,5 +46,28 @@ $(document).ready(function () {
     $("#page-reload-btn").click(function (e) {
         e.preventDefault();
         leadCAPTCHA();
+    });
+    $("#verify-btn").click(function (e) {
+        e.preventDefault();
+        let solved = (targetColors.length ? (selectedColors.size > 0) : true);
+        selectedColors.forEach(selectedColor => {
+            let correct = false;
+            targetColors.forEach(targetColor => {
+                if (!(targetColor.localeCompare(selectedColor))) {
+                    correct = true;
+                }
+            });
+            solved &= correct;
+        });
+        if (solved) {
+            $("#box-div").empty();
+            $("#box-div").append(
+                $("<div>").text("Correct!")
+            );
+        }
+        else {
+            selectedColors = new Set();
+            alert("Wrong! Try again or reload!");
+        }
     });
 });
