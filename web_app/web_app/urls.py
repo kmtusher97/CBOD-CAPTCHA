@@ -19,10 +19,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from .views import home_page
-from .rest_controller import get_all_boundary_colors
+from .rest_controller import get_all_boundary_colors, generate_captcha
 
 urlpatterns = [
     path('', home_page),
+    path('generate_captcha/', generate_captcha),
     path('boundary_colors/', get_all_boundary_colors),
     path('admin/', admin.site.urls)
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
