@@ -57,54 +57,6 @@
     border-radius: 50%;
     border: 1px solid black;
 }
-.button1 {
-    background-color: red;
-    color: red;
-}
-.button2 {
-    background-color: green;
-    color: green;
-}
-button:nth-child(3) {
-    background-color: blue;
-    color: blue;
-}
-button:nth-child(4) {
-    background-color: yellow;
-    color: yellow;
-}
-button:nth-child(5) {
-    background-color: black;
-    color: black;
-}
-button:nth-child(6) {
-    background-color: brown;
-    color: brown;
-}
-button:nth-child(7) {
-    background-color: orange;
-    color: orange;
-}
-.button11 {
-    margin-right: 5px;
-    background-color: #4CAF50;
-    border: 2px solid #e4d5d5;
-    border-radius: 4px;
-    color: white;
-    padding: 8px 25px;
-    cursor: pointer;
-    float: right;
-}
-.button12 {
-    margin-left: 5px;
-    background-color: #12ab8d;
-    border: 2px solid #e4d5d5;
-    border-radius: 4px;
-    color: white;
-    padding: 8px 15px;
-    cursor: pointer;
-    float: left;
-}
 .icon {
     width: 12px;
     height: 12px;
