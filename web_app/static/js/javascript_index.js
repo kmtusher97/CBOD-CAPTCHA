@@ -49,7 +49,7 @@ $(document).ready(function () {
     });
     $("#verify-btn").click(function (e) {
         e.preventDefault();
-        let solved = (targetColors.length ? (selectedColors.size > 0) : true);
+        let solved = (targetColors.length == selectedColors.size);
         selectedColors.forEach(selectedColor => {
             let correct = false;
             targetColors.forEach(targetColor => {
@@ -60,10 +60,8 @@ $(document).ready(function () {
             solved &= correct;
         });
         if (solved) {
-            $("#box-div").empty();
-            $("#box-div").append(
-                $("<div>").text("Correct!")
-            );
+            alert("Correct!!");
+            $(document.body).empty();
         }
         else {
             selectedColors = new Set();
