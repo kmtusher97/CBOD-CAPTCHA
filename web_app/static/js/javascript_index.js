@@ -25,7 +25,8 @@ $(document).ready(function () {
         },
     });
 
-    function selectColor(event) {
-        console.log(event.target);
-    }
+    $("#page-reload-btn").click(function (e) { 
+        e.preventDefault();
+        location.reload();
+    });
 });
