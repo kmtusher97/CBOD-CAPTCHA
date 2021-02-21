@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    selectedColors = new Set();
+
     $.ajax({
         type: "get",
         url: "http://127.0.0.1:8000/boundary_colors",
@@ -13,12 +15,17 @@ $(document).ready(function () {
                         "margin": "1px"
                     }
                 });
+                button.click(function (e) { 
+                    e.preventDefault();
+                    selectedColors.add(e.target.id);
+                });
                 $("#color-button-div").append(button);
 
             });
         },
-        error: function () {
-            alert("failed to connect to the server");
-        }
     });
+
+    function selectColor(event) {
+        console.log(event.target);
+    }
 });
