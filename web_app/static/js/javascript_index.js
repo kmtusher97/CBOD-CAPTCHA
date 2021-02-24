@@ -5,7 +5,7 @@ const captchaImageUrl = "static/captcha/captcha.jpeg";
 $(document).ready(function () {
     selectedColors = new Set();
     targetColors = [];
-    function leadCAPTCHA() {
+    function loadCAPTCHA() {
         $.ajax({
             type: "get",
             url: baseURL + "/generate_captcha",
@@ -42,10 +42,10 @@ $(document).ready(function () {
             }
         });
     }
-    leadCAPTCHA();
+    loadCAPTCHA();
     $("#page-reload-btn").click(function (e) {
         e.preventDefault();
-        leadCAPTCHA();
+        loadCAPTCHA();
     });
     $("#verify-btn").click(function (e) {
         e.preventDefault();
@@ -66,6 +66,7 @@ $(document).ready(function () {
         else {
             selectedColors = new Set();
             alert("Wrong! Try again or reload!");
+            location.reload();
         }
     });
 });
