@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: ./web_app
+      dockerfile: Dockerfile
+    container_name: cbod-web-app
+    volumes:
+      - ./web_app:/app
+    ports:
+      - "8000:8000"
