@@ -1,4 +1,4 @@
-const baseURL = "http://127.0.0.1:8000";
+const baseURL = "http://localhost:8000";
 const categoryImagesUrl = "static/captcha/category_images/";
 const captchaImageUrl = "static/captcha/captcha.jpeg";
 
