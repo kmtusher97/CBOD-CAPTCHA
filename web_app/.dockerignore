@@ -1,0 +1,27 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Ignore the local environment and virtual environment directories
+venv/
+.env
+
+# Ignore Django static and media files
+# static/
+# media/
+
+# Ignore IDE and editor settings
+*.vscode
+.idea/
+*.swp
+*.swo
+
+# Ignore Docker-related files if they are in subdirectories
+# docker-compose.override.yml
+
+# Ignore logs and temporary files
+*.log
+tmp/
