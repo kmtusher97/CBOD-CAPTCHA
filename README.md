@@ -39,3 +39,8 @@
 ![CBOD-Sample](./documentation/figures/sample-cbod-captchas.png)
 <br/>
 *Figure: Sample of CBOD-CAPTCHA*
+
+
+## Run with docker
+> Install docker \
+> run `docker compose up -d` to up and run the django app
